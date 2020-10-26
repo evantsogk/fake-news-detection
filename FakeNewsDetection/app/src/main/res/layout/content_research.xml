@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.ResearchActivity"
+    tools:showIn="@layout/activity_research">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/paper_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/text"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:text="@string/paper_title"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+            />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/text"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="8dp"
+                android:text="@string/work_description"
+                app:layout_constraintTop_toBottomOf="@id/paper_title"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/chart_politifact"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/work"
+                android:layout_width="match_parent"
+                android:layout_height="230dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/caption_politifact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/text"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="8dp"
+                android:text="@string/politifact_caption"
+                app:layout_constraintTop_toBottomOf="@id/chart_politifact"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/chart_gossipcop"
+                app:layout_constraintTop_toBottomOf="@+id/caption_politifact"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="230dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/caption_gossipcop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/text"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="8dp"
+                android:text="@string/gossipcop_caption"
+                app:layout_constraintTop_toBottomOf="@id/chart_gossipcop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/datasets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/text"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="8dp"
+                android:text="@string/datasets_description"
+                app:layout_constraintTop_toBottomOf="@id/caption_gossipcop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                app:layout_constraintTop_toBottomOf="@id/datasets"
+                android:background="@color/separator"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+            />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/Authors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="8dp"
+                android:text="@string/authors"
+                app:layout_constraintTop_toBottomOf="@id/separator"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/Evangelos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/text"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="8dp"
+                android:text="@string/evangelos"
+                app:layout_constraintTop_toBottomOf="@id/Authors"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/Evangelos_university"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/hint"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="8dp"
+                android:text="@string/university"
+                app:layout_constraintTop_toBottomOf="@id/Evangelos"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/Vana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/text"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="8dp"
+                android:text="@string/vana"
+                app:layout_constraintTop_toBottomOf="@id/Evangelos_university"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/Vana_university"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="15dp"
+                android:textColor="@color/hint"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="8dp"
+                android:text="@string/university"
+                app:layout_constraintTop_toBottomOf="@id/Vana"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tomorrow_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_logo"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentStart="true" />
+
+            <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+                android:id="@+id/buttonGroup_input_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:elevation="0dp"
+                android:background="@color/background"
+                app:borderColor="@color/colorAccent"
+                app:borderWidth="1dp"
+                app:divider="@android:color/white"
+                app:dividerPadding="0dp"
+                app:dividerWidth="0dp"
+                app:position="0"
+                app:radius="30dp"
+                app:ripple="false"
+                app:rippleColor="@android:color/holo_green_dark"
+                app:selectedBackground="@color/colorAccent"
+                app:selectionAnimationInterpolator="fastOutSlowIn"
+                app:selectionAnimationDuration="200"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+                <com.addisonelliott.segmentedbutton.SegmentedButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="10dp"
+                    app:drawable="@drawable/ic_link"
+                    app:drawableTint="@color/colorAccent"
+                    app:selectedDrawableTint="@color/background"
+                    app:drawableGravity="top" />
+
+                <com.addisonelliott.segmentedbutton.SegmentedButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="15dp"
+                    app:drawable="@drawable/ic_content"
+                    app:drawableTint="@color/colorAccent"
+                    app:selectedDrawableTint="@color/background"
+                    app:drawableGravity="top" />
+
+            </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+
+        </RelativeLayout>
+
+    <include layout="@layout/content_main" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

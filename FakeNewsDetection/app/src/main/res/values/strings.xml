@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Fake News Detection</string>
+    <string name="action_night_mode">Night mode</string>
+    <string name="action_about">Research</string>
+    <string name="button_evaluate">Evaluate</string>
+    <string name="hint_url">Copy a news URL</string>
+    <string name="button_image">News image</string>
+    <string name="hint_text">Enter news content</string>
+    <string name="title_activity_results">Results</string>
+    <string name="title_activity_research">Research</string>
+    <string name="politifact">PolitiFact</string>
+    <string name="gossipcop">GossipCop</string>
+    <string name="fake">Fake News</string>
+    <string name="real">Real News</string>
+    <string name="politifact_caption">(a) PolitiFact</string>
+    <string name="gossipcop_caption">(b) GossipCop</string>
+    <string name="paper_title">A Deep Learning Framework for Multi-Modal Fake News Detection</string>
+    <string name="work_description">  In our work, we study the problem of detecting fake
+        news using both the text and visual content. We propose a
+        deep learning model that can extract and combine text and
+        image features in order to improve the performance of real-time
+        fake news detection. For that purpose, we compared
+        different word-embeddings and state-of-the art deep learning
+        models for image feature extraction, to learn effective latent
+        representations of the news content.\n\n
+        The following graphs show the performance in detecting fake news when using only the text or visual content and when we combine them.
+    </string>
+    <string name="datasets_description">We use two datasets in our experiments, PolitiFact and GossipCop, which are available on the FakeNewsNet github repository.
+        The PolitiFact dataset contains a total of 509 news articles (231 fake and 278 real news), which are mostly related to politics.
+        The GossipCop dataset contains a total of 6458 news articles (3190 news and 3268 real news), which are mostly related to celebrities and entertainment.
+        \n\nThe results show that by using visual content, the detection of fake news can be improved, but the degree of this
+        improvement is affected by the visual distributions of each dataset.
+    </string>
+    <string name="authors">Authors</string>
+    <string name="evangelos">Evangelos Tsogkas</string>
+    <string name="vana">Vana Kalogeraki</string>
+    <string name="university">Athens University of Economics and Business</string>
+</resources>

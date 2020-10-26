@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.MainActivity"
+    android:clipChildren="false"
+    tools:showIn="@layout/activity_main">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_url"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:elevation="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/btn_evaluation"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="textUri"
+            android:maxLines="1"
+            android:drawableStart="@drawable/ic_link_hint"
+            android:drawablePadding="10dp"
+            android:textColorHint="@color/hint"
+            android:hint="@string/hint_url"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="7dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/btn_evaluation"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_image"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:drawableTop="@drawable/ic_image"
+            android:drawablePadding="-2dp"
+            android:text="@string/button_image"
+            android:textColor="@color/hint"
+            android:textAllCaps="false"
+            android:drawableTint="@color/button_image_colors"
+            android:drawableTintMode="src_over"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/AppTheme.ImageButton"
+        />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_text"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:elevation="2dp"
+            android:background="@drawable/layout_text"
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="3dp"
+            app:layout_constraintStart_toEndOf="@id/btn_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/input_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:inputType="textMultiLine"
+                android:textSize="16sp"
+                android:gravity="top"
+                android:paddingTop="5dp"
+                android:textColorHint="@color/hint"
+                android:hint="@string/hint_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+            />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_evaluation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/button_evaluate"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

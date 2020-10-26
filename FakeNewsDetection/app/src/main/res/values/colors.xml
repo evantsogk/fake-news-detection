@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#03A9F4</color>
+    <color name="colorAccent">#03A9F4</color>
+    <color name="button_pressed">#8003A9F4</color>
+    <color name="hint">#a7a7a7</color>
+    <color name="button_image_pressed">#4DFFFFFF</color>
+    <color name="background">#FFFFFF</color>
+    <color name="input_background">#FFFFFF</color>
+    <color name="stroke">#EBEBEB</color>
+    <color name="separator">#E0E0E0</color>
+    <color name="navigation_bar">#FFFFFF</color>
+    <color name="text">#000000</color>
+</resources>
