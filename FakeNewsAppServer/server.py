@@ -104,8 +104,8 @@ def communication(client, address):
 
 
 if __name__ == "__main__":
-    HOST = "192.168.1.100"
-    PORT = 50000
+    HOST = ""
+    PORT = 
 
     # load tokenizers
     with open('models/tokenizer_politifact.pickle', 'rb') as handle:
