@@ -22,4 +22,3 @@ Provide URL            |  Night Mode
 Provide Content        | Inference Results
 :-------------------------:|:-------------------------:
 <img src="/scr3.jpg"  width="350" height="778"/>  |  <img src="/scr4.jpg"  width="350" height="778"/> 
-.
