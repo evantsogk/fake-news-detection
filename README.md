@@ -17,8 +17,8 @@ The folder 'FakeNewsDetection' is the project of the demo android app that can s
 ## App Screenshots
 Provide URL            |  Night Mode
 :-------------------------:|:-------------------------:
-<img src="./scr1.jpg"  width="350" height="667"> | <img src="/scr2.jpg"  width="350" height="667"/>
+<img src="./scr1.jpg"  width="350" height="778"> | <img src="/scr2.jpg"  width="350" height="778"/>
 
 Provide Content        | Inference Results
 :-------------------------:|:-------------------------:
-<img src="/scr3.jpg"  width="350" height="667"/>  |  <img src="/scr4.jpg"  width="350" height="667"/> 
+<img src="/scr3.jpg"  width="350" height="778"/>  |  <img src="/scr4.jpg"  width="350" height="778"/> 
